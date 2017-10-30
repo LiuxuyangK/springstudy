@@ -1,0 +1,43 @@
+.settings/
+*/.settings/
+.springBeans
+*/.springBeans
+
+#ignore node_modules files
+node_modules
+
+#ignore svn files
+.svn
+*/.svn
+
+.project
+
+.metadata
+
+*/.project
+
+.classpath
+*/.classpath
+
+.data/
+*/.data/
+*~
+
+.idea/
+*.iml
+*/*.iml
+*/*/*.iml 
+.name
+
+#logs
+*/*/logs/
+/build/
+
+### OSX template
+.DS_Store
+.AppleDouble
+.LSOverride
+ .idea/workspace.xml
+
+*/target/
+/target/*
