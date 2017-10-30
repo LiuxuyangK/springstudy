@@ -15,13 +15,16 @@
 	http://www.springframework.org/schema/mvc
 	http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd ">
 
+    <!--mvc的扫包-->
     <context:component-scan base-package="com.study.lxy.controller"/>
 
+    <!--mvc的注解-->
     <mvc:annotation-driven />
 
+    <!--默认的控制器-->
     <mvc:default-servlet-handler />
 
-
+    <!--视图控制器-->
     <bean id="viewResolverJsp" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/"/>
         <property name="suffix" value=".jsp"/>
@@ -29,13 +32,13 @@
         <property name="order" value="1"/>
     </bean>
 
+    <!--文件处理器-->
     <bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="multipartResolver">
         <property name="defaultEncoding" value="UTF-8"></property>
         <property name="maxUploadSize" value="540000000"></property>
-
     </bean>
 
-
+    <!--controller返回一个对象也可以，或者用json序列化好再传回去也可以。配置了这个就可以直接返回对象，这个帮忙转换了-->
     <bean id="mappingJacksonHttpMessageConverter"
           class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
         <property name="supportedMediaTypes">
