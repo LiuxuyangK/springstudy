@@ -40,14 +40,4 @@
         </property>
     </bean>
 
-
-    <!-- 配置事务管理器 -->
-    <bean id="transactionManager"
-          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="nrsSource" />
-    </bean>
-
-    <!-- 注解方式配置事务 -->
-    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
-
 </beans>
