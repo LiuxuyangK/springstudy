@@ -11,5 +11,7 @@ public class Test1Stash_1 {
      */
     public static void main(String[] args) {
 
+        //很复杂的逻辑还没写完呢。。。
+        int a = 1;
     }
 }
