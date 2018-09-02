@@ -16,5 +16,11 @@ public class MqTest extends BaseTest{
   public void SendMessageTest(){
     messageProducer.sendMessage("这是我的消息");
   }
+
+  @Test
+  public void RecvMessageTest() throws InterruptedException {
+    Thread.sleep(1000000000L);
+
+  }
 }
 

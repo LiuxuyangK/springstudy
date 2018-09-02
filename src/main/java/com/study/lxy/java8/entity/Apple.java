@@ -4,9 +4,11 @@ package com.study.lxy.java8.entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
 
 import java.math.BigDecimal;
 
+@ToString
 @Data
 @Builder
 @AllArgsConstructor

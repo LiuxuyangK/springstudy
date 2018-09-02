@@ -10,7 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 
 @RunWith(JUnit4ClassRunner.class)
 //@ContextConfiguration(locations = {"classpath*:config/spring/spring*.xml","classpath*:config/spring/dis*.xml"})
-@ContextConfiguration(locations = {"classpath:config/spring/*.xml"})
+@ContextConfiguration(locations = {"classpath:config/spring/spring*.xml"})
 public class BaseTest {
 
   @Test

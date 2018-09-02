@@ -22,9 +22,9 @@
     <bean id="nrsSource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://10.21.21.84:3306/nrs" />
-        <property name="username" value="lsnuwa" />
-        <property name="password" value="wyiw22sonXeyo6t9" />
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/local_test" />
+        <property name="username" value="root" />
+        <property name="password" value="lxy098423" />
     </bean>
 
     <bean id="baseDataSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">

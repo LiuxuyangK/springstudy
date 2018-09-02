@@ -25,7 +25,7 @@
   <!--通过指定下面的admin信息，当前producer中的exchange和queue会在rabbitmq服务器上自动生成 -->
   <rabbit:admin connection-factory="connectionFactory" />
 
-  <!--定义queue -->
+  <!--定义queue-->
   <rabbit:queue name="queueTest" durable="true" auto-delete="false" exclusive="false" />
 
   <!-- 定义direct exchange，绑定queueTest -->
@@ -35,7 +35,7 @@
     </rabbit:bindings>
   </rabbit:direct-exchange>
 
-  <!-- queue litener  观察 监听模式 当有消息到达时会通知监听在对应的队列上的监听对象-->
+   <!--queue litener  观察 监听模式 当有消息到达时会通知监听在对应的队列上的监听对象-->
   <rabbit:listener-container connection-factory="connectionFactory">
     <rabbit:listener queues="queueTest" ref="messageReceiver"/>
   </rabbit:listener-container>
